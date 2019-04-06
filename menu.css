@@ -1,0 +1,30 @@
+.navigation__list {
+	display: flex;
+}
+.navigation__item {
+	list-style: none;
+}
+.navigation__link {
+	padding: 0 50px;
+	border: 1px solid;
+	line-height: 40px;
+}
+.navigation__item:not(:last-child){
+	margin-right: 50px;
+}
+.navigation__item:nth-child(2){
+	position: relative;
+}
+.dropdown-list {
+	position: absolute;
+	top: 100%;
+	background-color: white;
+	width: 100%;
+	display: none;
+}
+.dropdown-item:not(:last-child){
+	margin-bottom: 20px;
+}
+.navigation__item:nth-child(2):hover .dropdown-list {
+	display: block;
+}

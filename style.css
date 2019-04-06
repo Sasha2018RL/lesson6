@@ -1,0 +1,39 @@
+.list {
+	padding: 0;
+	margin: 0;
+}
+.list-item  {
+	padding: 25px 50px;
+	border: 1px solid;
+	list-style: none;
+}
+.list-item:not(:last-child){
+	margin-bottom: 50px;
+}
+
+.list-item:first-child {
+	background-color: lightblue;
+}
+.list-item:last-child {
+	background-color: lightgreen;
+}
+/*.list-item:nth-child(even) { /*odd - нечетные even - четные*/
+	/*
+	background-color: lightblue;
+}*/
+.list-item:nth-child(3n+2) { /*каждый третий*/
+	background-color: lightblue;
+}
+.list-item:hover {
+	background-color: pink;
+	border-color: green;
+	color: lime;
+}
+.list-item:hover {
+	background-color: pink;
+	border-color: green;
+	color: pink;
+}
+.list-item:focus {
+	background-color: orange;
+}

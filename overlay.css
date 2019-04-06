@@ -1,0 +1,31 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	position: relative;
+	border: 1px solid;
+	width: 500px;
+	height: 600px;
+	background-image: url(cat.jpg);
+	background-size: cover;
+}
+.card:hover .overlay{
+	opacity: 1;
+}
+.overlay {
+	position: absolute;
+	background-color: rgba(238, 130, 238, .5);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition-duration: 1s;
+	transition-property: opacity;
+	transition-delay: 1s;
+}

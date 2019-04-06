@@ -1,0 +1,17 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	width: 500px;
+	height: 500px;
+	background-color: green;
+	transition: 1s;
+	/*transform: rotate(45deg);*/
+}
+.card:hover {
+	/*transform: rotate(720deg);*/
+	transform: scale(2);
+}
